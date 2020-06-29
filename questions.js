@@ -12,13 +12,7 @@ let questions = [
   },
 ];
 
-let text = [
-  [1, 'one'],
-  [2, 'two'],
-  [3, 'three'],
-  [4, 'four'],
-  [5, 'five'],
-];
+let text = ['zero', 'one', 'two', 'three', 'four', 'five'];
 
 let tableGrid = '<table class="dei-grid">\n';
 tableGrid += '  <thead>\n';
@@ -88,9 +82,19 @@ $(document).ready(function () {
         tableGrid +
         '</div>'
     );
-    $('#table-set-' + tableNumber + ' table')
-      .find('.one-three')
-      .text(3)
-      .addClass('.level-' + 3);
+
+    let counts = [];
+    i.scores.forEach((s) => {
+      let cell = text[s[0]] + '-' + text[s[1]];
+      if (counts[cell]) {
+        counts[cell]++;
+      } else {
+        counts[cell] = 1;
+      }
+      console.log('Cell:', cell, 'Value:', counts[cell]);
+      $('#table-set-' + tableNumber + ' table')
+        .find('.' + cell)
+        .text(counts[cell]);
+    });
   });
 });
