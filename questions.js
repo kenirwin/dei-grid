@@ -76,19 +76,19 @@ tableGrid += '  </tbody>\n';
 tableGrid += '</table>\n';
 
 $(document).ready(function () {
-  let count = 0;
+  let tableNumber = 0;
   questions.forEach((i) => {
-    count++;
+    tableNumber++;
     $('#container').append(
       '<div class="table-set" id="table-set-' +
-        count +
+        tableNumber +
         '"><h2>' +
         i.question +
         '</h2>' +
         tableGrid +
         '</div>'
     );
-    $('#table-set-' + count + ' table')
+    $('#table-set-' + tableNumber + ' table')
       .find('.one-three')
       .text(3)
       .addClass('.level-' + 3);
