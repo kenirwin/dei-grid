@@ -2,6 +2,8 @@ let questions = [
   {
     question: 'Accessibility in procurement',
     scores: [
+      //difficulty (easy 1 - hard 5)
+      //importance (imp 1 - not imp 5)
       [4, 2],
       [4, 2],
       [2, 2],
@@ -85,7 +87,8 @@ $(document).ready(function () {
 
     let counts = [];
     i.scores.forEach((s) => {
-      let cell = text[s[0]] + '-' + text[s[1]];
+      //let cell = text[s[0]] + '-' + text[s[1]];
+      let cell = text[s[1]] + '-' + text[s[0]];
       if (counts[cell]) {
         counts[cell]++;
       } else {
