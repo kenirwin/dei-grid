@@ -12,3 +12,18 @@ td {
   background-color: green;
   color: green;
 }
+.tiny th,
+.tiny td {
+  font-size: 2pt;
+  height: 20px;
+  width: 20px;
+}
+.tiny h2 {
+  display: none;
+}
+.tiny .table-set {
+  display: inline-block;
+}
+.tiny .qi {
+  display: none;
+}

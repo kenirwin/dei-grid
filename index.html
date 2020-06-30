@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div>
+      <button id="tiny-toggle" class="btn btn-primary float-right">
+        Tiny View
+      </button>
+    </div>
     <!-- CSS only -->
     <link
       rel="stylesheet"
@@ -34,4 +39,12 @@
     <script src="questions.js"></script>
     <div id="container" class="container"></div>
   </body>
+  <script>
+    $(document).ready(function () {
+      $('#tiny-toggle').click((event) => {
+        console.log('clicked to toggle');
+        $('body').toggleClass('tiny');
+      });
+    });
+  </script>
 </html>
