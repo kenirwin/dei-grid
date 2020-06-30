@@ -689,7 +689,7 @@ let questions = [
 
 let text = ['zero', 'one', 'two', 'three', 'four', 'five'];
 
-let tableGrid = '<table class="dei-grid" data-toggle="tooltip">\n';
+let tableGrid = '<table class="dei-grid my-3" data-toggle="tooltip">\n';
 tableGrid += '  <thead>\n';
 tableGrid += '    <tr>\n';
 tableGrid += '      <th></th>\n';

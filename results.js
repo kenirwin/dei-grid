@@ -7,21 +7,21 @@ $(document).ready(function () {
     let questionsAndIdeas = '';
     if (i.questions_ideas) {
       i.questions_ideas.forEach((q) => {
-        questionsAndIdeas += String(q) + '<br><br>';
+        questionsAndIdeas += '<li>' + String(q) + '</li>';
       });
     }
 
     /* create one table per item */
     $('#container').append(
-      '<div class="table-set" id="table-set-' +
+      '<div class="table-set row justify-content-center" id="table-set-' +
         tableNumber +
         '"><h2>' +
         i.question +
         '</h2>' +
         tableGrid +
-        '<div class="qi">' +
+        '<ul class="questions-ideas mt-2 mb-5">' +
         questionsAndIdeas +
-        '</div>' +
+        '</ul>' +
         '</div>'
     );
     /* add question as title attr for tooltip */

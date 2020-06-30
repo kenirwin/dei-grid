@@ -8,6 +8,14 @@ td {
   width: 85px;
   border: 1px solid #999;
 }
+@media screen and (max-width: 786px) {
+  th,
+  td {
+    height: 50px;
+    width: 50px;
+  }
+}
+
 .occupied {
   background-color: orange;
   color: orange;
@@ -26,7 +34,6 @@ td {
   background-color: red;
   color: red;
 }
-
 .tiny th,
 .tiny td {
   font-size: 2pt;
@@ -40,6 +47,6 @@ td {
   display: inline-block;
   margin: 5px;
 }
-.tiny .qi {
+.tiny .questions-ideas {
   display: none;
 }
