@@ -9,16 +9,24 @@ td {
   border: 1px solid #999;
 }
 .occupied {
-  background-color: green;
-  color: green;
+  background-color: orange;
+  color: orange;
 }
-.one-one .occupied,
-.occupied .one-two,
-.occupied .two-one,
-.occupied .two-two {
+.occupied.one-one,
+.occupied.one-two,
+.occupied.two-one,
+.occupied.two-two {
   background-color: green !important;
   color: green !important;
 }
+.occupied.four-four,
+.occupied.four-five,
+.occupied.five-four,
+.occupied.five-five {
+  background-color: red;
+  color: red;
+}
+
 .tiny th,
 .tiny td {
   font-size: 2pt;
