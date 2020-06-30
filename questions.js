@@ -767,7 +767,7 @@ $(document).ready(function () {
         '</div>' +
         '</div>'
     );
-    $('#table-set-' + tableNumber + ' table').attr('summary', i.question);
+    $('#table-set-' + tableNumber + ' table').attr('title', i.question);
     //    $('#table-set-' + tableNumber + ' table').
     let counts = [];
     i.scores.forEach((s) => {
@@ -786,5 +786,8 @@ $(document).ready(function () {
         .css('opacity', (1 / 5) * counts[cell])
         .text(counts[cell]);
     });
+  });
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip();
   });
 });
