@@ -96,7 +96,7 @@ $(document).ready(function () {
         .find('.' + cell)
         .addClass('occupied')
         // .data('score', counts[cell])
-        .css('opacity', (1 / 6) * counts[cell])
+        .css('opacity', (1 / 5) * counts[cell])
         .text(counts[cell]);
     });
   });
