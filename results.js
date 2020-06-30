@@ -2,6 +2,8 @@ $(document).ready(function () {
   let tableNumber = 0;
   questions.forEach((i) => {
     tableNumber++;
+
+    /* list questions and ideas per item */
     let questionsAndIdeas = '';
     if (i.questions_ideas) {
       i.questions_ideas.forEach((q) => {
@@ -9,6 +11,7 @@ $(document).ready(function () {
       });
     }
 
+    /* create one table per item */
     $('#container').append(
       '<div class="table-set" id="table-set-' +
         tableNumber +
@@ -21,8 +24,10 @@ $(document).ready(function () {
         '</div>' +
         '</div>'
     );
+    /* add question as title attr for tooltip */
     $('#table-set-' + tableNumber + ' table').attr('title', i.question);
-    //    $('#table-set-' + tableNumber + ' table').
+
+    /* add values for each relevant cell */
     let counts = [];
     i.scores.forEach((s) => {
       //let cell = text[s[0]] + '-' + text[s[1]];
@@ -36,15 +41,18 @@ $(document).ready(function () {
       $('#table-set-' + tableNumber + ' table')
         .find('.' + cell)
         .addClass('occupied')
-        // .data('score', counts[cell])
         .css('opacity', (1 / 5) * counts[cell])
         .text(counts[cell]);
     });
   });
+
+  /* turn tiny-view on and off */
   $('#tiny-toggle').click((event) => {
     console.log('clicked to toggle');
     $('body').toggleClass('tiny');
   });
+
+  /* add tooltips on table mouseover */
   $(function () {
     $('[data-toggle="tooltip"]').tooltip();
   });
