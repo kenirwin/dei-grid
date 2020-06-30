@@ -12,6 +12,13 @@ td {
   background-color: green;
   color: green;
 }
+.one-one .occupied,
+.occupied .one-two,
+.occupied .two-one,
+.occupied .two-two {
+  background-color: green !important;
+  color: green !important;
+}
 .tiny th,
 .tiny td {
   font-size: 2pt;
@@ -23,6 +30,7 @@ td {
 }
 .tiny .table-set {
   display: inline-block;
+  margin: 5px;
 }
 .tiny .qi {
   display: none;
