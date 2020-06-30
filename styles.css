@@ -1,0 +1,14 @@
+table {
+  border: 1px solid #999;
+  border-collapse: collapse;
+}
+th,
+td {
+  height: 85px;
+  width: 85px;
+  border: 1px solid #999;
+}
+.occupied {
+  background-color: green;
+  color: green;
+}

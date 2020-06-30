@@ -94,6 +94,9 @@ $(document).ready(function () {
       console.log('Cell:', cell, 'Value:', counts[cell]);
       $('#table-set-' + tableNumber + ' table')
         .find('.' + cell)
+        .addClass('occupied')
+        // .data('score', counts[cell])
+        .css('opacity', (1 / 6) * counts[cell])
         .text(counts[cell]);
     });
   });
