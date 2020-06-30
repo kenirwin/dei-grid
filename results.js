@@ -16,7 +16,7 @@ $(document).ready(function () {
     $('#container').append(
       '<div class="table-set row justify-content-center" id="table-set-' +
         tableNumber +
-        '"><h2>' +
+        '"><h2 class="h3">' +
         i.question +
         '</h2>' +
         tableGrid +
