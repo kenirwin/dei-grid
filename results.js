@@ -50,10 +50,15 @@ $(document).ready(function () {
   $('#tiny-toggle').click((event) => {
     console.log('clicked to toggle');
     $('body').toggleClass('tiny');
+    if ($('body').hasClass('tiny')) {
+      $('[data-toggle="tooltip"]').tooltip('enable');
+    } else {
+      $('[data-toggle="tooltip"]').tooltip('disable');
+    }
   });
 
   /* add tooltips on table mouseover */
   $(function () {
-    $('[data-toggle="tooltip"]').tooltip();
+    $('[data-toggle="tooltip"]').tooltip('disable');
   });
 });
