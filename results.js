@@ -41,6 +41,10 @@ $(document).ready(function () {
         .text(counts[cell]);
     });
   });
+  $('#tiny-toggle').click((event) => {
+    console.log('clicked to toggle');
+    $('body').toggleClass('tiny');
+  });
   $(function () {
     $('[data-toggle="tooltip"]').tooltip();
   });
