@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  let text = ['zero', 'one', 'two', 'three', 'four', 'five'];
   let tableNumber = 0;
   questions.forEach((i) => {
     tableNumber++;
