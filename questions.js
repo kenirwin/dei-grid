@@ -1,6 +1,7 @@
 let questions = [
   {
-    question: 'Accessibility in procurement',
+    question:
+      'Address accessibility issues across all facets of org when procuring, grow partnership with accessibility office, more training for staff on accessibility.',
     scores: [
       //difficulty (easy 1 - hard 5)
       //importance (imp 1 - not imp 5)
@@ -10,6 +11,135 @@ let questions = [
       [2, 2],
       [5, 3],
       [4, 1],
+    ],
+  },
+
+  {
+    question:
+      'Make sure that everything complies with ADA (captioning for videos, for example)',
+    scores: [
+      //difficulty (easy 1 - hard 5)
+      //importance (imp 1 - not imp 5)
+      [4, 1],
+      [4, 2],
+      [3, 1],
+      [3, 1],
+      [4, 2],
+      [3, 1],
+    ],
+  },
+
+  {
+    question:
+      'Ensure that display cases and other displays reflect diversity and inclusion.',
+    scores: [
+      //difficulty (easy 1 - hard 5)
+      //importance (imp 1 - not imp 5)
+      [2, 3],
+      [1, 2],
+      [2, 2],
+      [1, 3],
+      [3, 3],
+      [1, 3],
+    ],
+  },
+
+  {
+    question: 'Ensure diverse representation at the circulation desk',
+    scores: [
+      //difficulty (easy 1 - hard 5)
+      //importance (imp 1 - not imp 5)
+      [2, 3],
+      [4, 1],
+      [3, 1],
+      [2, 2],
+      [4, 2],
+      [2, 2],
+    ],
+  },
+
+  {
+    question:
+      'Ensure the Libraries’ website represents diversity and inclusion. (Accessibility is an existing top priority for the website.)',
+    scores: [
+      //difficulty (easy 1 - hard 5)
+      //importance (imp 1 - not imp 5)
+      [2, 1],
+      [3, 2],
+      [4, 1],
+      [1, 3],
+      [3, 1],
+      [3, 2],
+    ],
+  },
+
+  {
+    question: 'HR: Diverse Library Leadership',
+    scores: [
+      //difficulty (easy 1 - hard 5)
+      //importance (imp 1 - not imp 5)
+      [5, 2],
+      [4, 2],
+      [5, 1],
+      [4, 1],
+      [5, 1],
+      [4, 1],
+    ],
+  },
+
+  {
+    question: 'HR Diversity Officer on Search Committees',
+    scores: [
+      //difficulty (easy 1 - hard 5)
+      //importance (imp 1 - not imp 5)
+      [2, 2],
+      [2, 3],
+      [1, 1],
+      [2, 1],
+      [4, 1],
+      [3, 3],
+    ],
+  },
+
+  {
+    question: 'High School/College future-librarians program',
+    scores: [
+      //difficulty (easy 1 - hard 5)
+      //importance (imp 1 - not imp 5)
+      [3, 3],
+      [5, 2],
+      [5, 1], // second value is "slight: 1 or 2"
+      [3, 3],
+      [4, 3],
+      [3, 1], // second value is "slight: 1 or 2"
+    ],
+  },
+
+  {
+    question: 'Oxford Culture',
+    scores: [
+      //difficulty (easy 1 - hard 5)
+      //importance (imp 1 - not imp 5)
+      [5, 1],
+      [3, 2],
+      [5, 3],
+      [5, 3],
+      [5, 1],
+      [5, 3],
+    ],
+  },
+
+  {
+    question: 'HR Diversity Officer on Search Committees',
+    scores: [
+      //difficulty (easy 1 - hard 5)
+      //importance (imp 1 - not imp 5)
+      [2, 2],
+      [2, 3],
+      [1, 1],
+      [2, 1],
+      [4, 1],
+      [3, 3],
     ],
   },
 ];
